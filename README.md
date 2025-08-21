@@ -68,6 +68,7 @@ make
 - Futher optimizations can be mad by porting the network API calls from python to c++ consolidating the code base as well as boosting performance.The networking and API call was easier to handle in python. 
 - More analysis features
 - This so far only show market data but the next step is to research the market and propose my own solutions after bettering my understanding on quatitative analysis.
-- GUI and data visualization of market data 
+- GUI and data visualization of market data
+- Extrapolate and refactor my codebase into smaller chunkcs and handler at the moment its very error prone. 
 
 
