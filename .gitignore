@@ -1,3 +1,4 @@
+# Build artifacts
 build/
 bin/
 *.o
@@ -5,24 +6,39 @@ bin/
 *.so
 *.dylib
 
+# CMake files
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
 Makefile
 *.cmake
 
+# IDE and editor files
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
+# OS files
 .DS_Store
 Thumbs.db
 
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
 
+# Environment and secret files
+.env
+.env.*
+*.key
+*.secret
+
+# Database files (optional - exclude if you don't want to track)
 *.db
 *.sqlite
+
+# Any other generated files
+*_backup
+*.backup
