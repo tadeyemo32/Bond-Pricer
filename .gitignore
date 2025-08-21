@@ -1,15 +1,28 @@
-/build/
-/bin/
-/.cache/
-/CMakeFiles/
-/CMakeCache.txt
-/cmake_install.cmake
-/compile_commands.json
-/Makefile
+build/
+bin/
+*.o
+*.a
+*.so
+*.dylib
+
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.cmake
 
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
 
 .DS_Store
 Thumbs.db
 
+__pycache__/
+*.pyc
+*.pyo
+
+*.db
+*.sqlite
