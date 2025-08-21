@@ -63,19 +63,11 @@ cmake ..
 make
 ```
 
-### 5.Project Structure 
-Bond-Pricer/
-├── include/
-│   ├── bond.h
-│   ├── db.h
-│   └── market_data.h
-├── src/
-│   ├── bond.cpp
-│   ├── db.cpp
-│   ├── main.cpp
-│   └── market_data.cpp
-├── fetch_market_data.py
-├── CMakeLists.txt
-├── .env
-└── README.md
+### Inmprovments to be made ...
+
+- Futher optimizations can be mad by porting the network API calls from python to c++ consolidating the code base as well as boosting performance.The networking and API call was easier to handle in python. 
+- More analysis features
+- This so far only show market data but the next step is to research the market and propose my own solutions after bettering my understanding on quatitative analysis.
+- GUI and data visualization of market data 
+
 
