@@ -7,7 +7,7 @@ This project demonstrates bond pricing, yield calculation, and market data analy
 **Not intended for real financial or investment decisions.**
 
 ---
-![Menu Screenshot](images/menu_screenshot.png)
+10:![Menu Screenshot](images/menu_screenshot.png)
 ## Features
 
 - Zero-coupon and coupon bond pricing
