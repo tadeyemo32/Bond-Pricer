@@ -35,10 +35,16 @@ __pycache__/
 *.key
 *.secret
 
-# Database files (optional - exclude if you don't want to track)
+# Database files
 *.db
 *.sqlite
+
+# Documentation and assets
+README.md
+assets/
+get-pip.py
 
 # Any other generated files
 *_backup
 *.backup
+EOF
