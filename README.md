@@ -7,7 +7,7 @@ This project demonstrates bond pricing, yield calculation, and market data analy
 **Not intended for real financial or investment decisions.**
 
 ---
-10:![Menu Screenshot](include/1.png)
+![Menu Screenshot](include/1.png)
 ## Features
 
 - Zero-coupon and coupon bond pricing
@@ -19,7 +19,7 @@ This project demonstrates bond pricing, yield calculation, and market data analy
 - Multi-currency support (USD, EUR, GBP, JPY)
 
 ---
-
+![Analysis Output](include/2.png)
 ## Requirements
 
 - C++20 compatible compiler
