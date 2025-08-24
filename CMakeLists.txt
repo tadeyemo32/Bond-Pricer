@@ -4,7 +4,6 @@ project(BondPricer)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# Find JSONCPP - check both system and local install paths
 find_path(JSONCPP_INCLUDE_DIR json/json.h
     PATHS 
     /usr/local/include
@@ -31,13 +30,11 @@ else()
     include_directories(${JSONCPP_INCLUDE_DIR})
 endif()
 
-# SQLite3
 find_library(SQLITE3_LIB sqlite3)
 if(NOT SQLITE3_LIB)
     message(FATAL_ERROR "SQLite3 not found")
 endif()
 
-# Include directories
 include_directories(include)
 
 # Source files
@@ -57,18 +54,15 @@ target_link_libraries(bond_pricer
     ${JSONCPP_LIBRARY}
 )
 
-# Set RPATH so the executable can find the libraries
 set(CMAKE_INSTALL_RPATH "${CMAKE_INSTALL_PREFIX}/lib")
 set(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
 
-# Copy Python script
 configure_file(
     ${CMAKE_SOURCE_DIR}/fetch_market_data.py
     ${CMAKE_BINARY_DIR}/fetch_market_data.py
     COPYONLY
 )
 
-# Copy .env file if it exists
 if(EXISTS ${CMAKE_SOURCE_DIR}/.env)
     configure_file(
         ${CMAKE_SOURCE_DIR}/.env
