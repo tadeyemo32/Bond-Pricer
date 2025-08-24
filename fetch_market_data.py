@@ -1,4 +1,3 @@
-# fetch_market_data.py (updated)
 import os
 import json
 import time
